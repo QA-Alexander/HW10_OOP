@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
-    public void shouldSetStation () {
+    public void shouldSetStation() {
         Radio radio = new Radio();
 
         radio.setStationNumber(2);
@@ -17,7 +17,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shoulBeZeroIfBelowLowerStation() {
+    public void shouldBeZeroIfBelowLowerStation() {
         Radio radio = new Radio();
         radio.setStationNumber(-1);
 
@@ -28,7 +28,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldBeZeroIfAboveHighestStation () {
+    public void shouldBeZeroIfAboveHighestStation() {
         Radio radio = new Radio();
         radio.setStationNumber(10);
 
@@ -39,7 +39,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderStationTestIf0 () {
+    public void lowBorderStationTestIf0() {
         Radio radio = new Radio();
         radio.setStationNumber(0);
 
@@ -48,8 +48,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void lowBorderStationTestIf1 () {
+    public void lowBorderStationTestIf1() {
         Radio radio = new Radio();
         radio.setStationNumber(1);
 
@@ -60,7 +61,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderStationTestIf8 () {
+    public void highBorderStationTestIf8() {
         Radio radio = new Radio();
         radio.setStationNumber(8);
 
@@ -71,7 +72,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderStationTestIf9 () {
+    public void highBorderStationTestIf9() {
         Radio radio = new Radio();
         radio.setStationNumber(9);
 
@@ -82,7 +83,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetVolume () {
+    public void shouldSetVolume() {
         Radio radio = new Radio();
         radio.setVolume(50);
 
@@ -93,7 +94,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shoulBeZeroIfBelowLowerVolume () {
+    public void shoulBeZeroIfBelowLowerVolume() {
         Radio radio = new Radio();
         radio.setVolume(-1);
 
@@ -104,7 +105,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldBeZeroIfAboveHighestVolume () {
+    public void shouldBeZeroIfAboveHighestVolume() {
         Radio radio = new Radio();
         radio.setVolume(101);
 
@@ -115,7 +116,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderVolumeTestIf0 () {
+    public void lowBorderVolumeTestIf0() {
         Radio radio = new Radio();
         radio.setVolume(0);
 
@@ -126,7 +127,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderVolumeTestIf1 () {
+    public void lowBorderVolumeTestIf1() {
         Radio radio = new Radio();
         radio.setVolume(1);
 
@@ -137,7 +138,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderVolumeTestIf99 () {
+    public void highBorderVolumeTestIf99() {
         Radio radio = new Radio();
         radio.setVolume(99);
 
@@ -148,7 +149,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderVolumeTestIf100 () {
+    public void highBorderVolumeTestIf100() {
         Radio radio = new Radio();
         radio.setVolume(100);
 
@@ -159,7 +160,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseStationNumber () {
+    public void shouldIncreaseStationNumber() {
         Radio radio = new Radio();
         radio.setStationNumber(2);
 
@@ -172,7 +173,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderNextButtonTestIf0 () {
+    public void lowBorderNextButtonTestIf0() {
         Radio radio = new Radio();
         radio.setStationNumber(0);
 
@@ -185,7 +186,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderNextButtonTestIf1 () {
+    public void lowBorderNextButtonTestIf1() {
         Radio radio = new Radio();
         radio.setStationNumber(1);
 
@@ -198,7 +199,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderNextButtonTestIf8 () {
+    public void highBorderNextButtonTestIf8() {
         Radio radio = new Radio();
         radio.setStationNumber(8);
 
@@ -211,7 +212,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderNextButtonTestIf9 () {
+    public void highBorderNextButtonTestIf9() {
         Radio radio = new Radio();
         radio.setStationNumber(9);
 
@@ -224,7 +225,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseStationNumber () {
+    public void shouldDecreaseStationNumber() {
         Radio radio = new Radio();
         radio.setStationNumber(5);
 
@@ -237,7 +238,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderPrevButtonTestIf1 () {
+    public void lowBorderPrevButtonTestIf1() {
         Radio radio = new Radio();
         radio.setStationNumber(1);
 
@@ -250,7 +251,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderPrevButtonTestIf0 () {
+    public void lowBorderPrevButtonTestIf0() {
         Radio radio = new Radio();
         radio.setStationNumber(0);
 
@@ -263,7 +264,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderPrevButtonTestIf9 () {
+    public void highBorderPrevButtonTestIf9() {
         Radio radio = new Radio();
         radio.setStationNumber(9);
 
@@ -276,7 +277,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderPrevButtonTestIf8 () {
+    public void highBorderPrevButtonTestIf8() {
         Radio radio = new Radio();
         radio.setStationNumber(8);
 
@@ -289,7 +290,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseVolume () {
+    public void shouldIncreaseVolume() {
         Radio radio = new Radio();
         radio.setVolume(50);
 
@@ -302,7 +303,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNotIncreaseVolume () {
+    public void shouldNotIncreaseVolume() {
         Radio radio = new Radio();
         radio.setVolume(100);
 
@@ -315,7 +316,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderIncreaseVolumeTestIf0 () {
+    public void lowBorderIncreaseVolumeTestIf0() {
         Radio radio = new Radio();
         radio.setVolume(0);
 
@@ -328,7 +329,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderIncreaseVolumeTestIf1 () {
+    public void lowBorderIncreaseVolumeTestIf1() {
         Radio radio = new Radio();
         radio.setVolume(1);
 
@@ -341,7 +342,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderIncreaseVolumeTestIf99 () {
+    public void highBorderIncreaseVolumeTestIf99() {
         Radio radio = new Radio();
         radio.setVolume(99);
 
@@ -354,7 +355,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseVolume () {
+    public void shouldDecreaseVolume() {
         Radio radio = new Radio();
         radio.setVolume(49);
 
@@ -367,7 +368,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNotDecreaseVolume () {
+    public void shouldNotDecreaseVolume() {
         Radio radio = new Radio();
         radio.setVolume(0);
 
@@ -380,7 +381,7 @@ public class RadioTest {
     }
 
     @Test
-    public void lowBorderDecreaseVolumeTestIf1 () {
+    public void lowBorderDecreaseVolumeTestIf1() {
         Radio radio = new Radio();
         radio.setVolume(1);
 
@@ -393,7 +394,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderDecreaseVolumeTestIf100 () {
+    public void highBorderDecreaseVolumeTestIf100() {
         Radio radio = new Radio();
         radio.setVolume(100);
 
@@ -406,7 +407,7 @@ public class RadioTest {
     }
 
     @Test
-    public void highBorderDecreaseVolumeTestIf99 () {
+    public void highBorderDecreaseVolumeTestIf99() {
         Radio radio = new Radio();
         radio.setVolume(99);
 

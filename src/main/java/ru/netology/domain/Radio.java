@@ -4,38 +4,34 @@ public class Radio {
     private int stationNumber;
     private int volume;
 
-    public void next () {
+    public void next() {
         if (stationNumber != 9) {
             stationNumber++;
-        }
-        else {
+        } else {
             stationNumber = 0;
         }
     }
 
-    public void prev () {
-        if (stationNumber !=0) {
+    public void prev() {
+        if (stationNumber != 0) {
             stationNumber--;
-        }
-        else {
+        } else {
             stationNumber = 9;
         }
     }
 
-    public void increaseVolume () {
+    public void increaseVolume() {
         if (volume < 100) {
             volume++;
-        }
-        else {
+        } else {
             return;
         }
     }
 
-    public void decreaseVolume () {
+    public void decreaseVolume() {
         if (volume > 0) {
             volume--;
-        }
-        else {
+        } else {
             return;
         }
     }
