@@ -3,9 +3,18 @@ package ru.netology.domain;
 public class Radio {
     private int stationNumber;
     private int volume;
+    private int maxStation;
+
+    public Radio() {
+        this.maxStation = 9;
+    }
+
+    public Radio(int countStation) {
+        this.maxStation = countStation - 1;
+    }
 
     public void next() {
-        if (stationNumber != 9) {
+        if (stationNumber != maxStation) {
             stationNumber++;
         } else {
             stationNumber = 0;
@@ -16,7 +25,7 @@ public class Radio {
         if (stationNumber != 0) {
             stationNumber--;
         } else {
-            stationNumber = 9;
+            stationNumber = maxStation;
         }
     }
 
@@ -44,7 +53,7 @@ public class Radio {
         if (stationNumber < 0) {
             return;
         }
-        if (stationNumber > 9) {
+        if (stationNumber > maxStation) {
             return;
         }
         this.stationNumber = stationNumber;
